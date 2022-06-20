@@ -17,7 +17,7 @@ handler = WebhookHandler('')
 
 
 def getitem():
-    res = requests.get(url="https://fortnite-api.com/shop/br", headers={"x-api-key": '45545e3b-0a80-426b-9105-d1babcbacfc6'}, params={"language": 'ja'})
+    res = requests.get(url="https://fortnite-api.com/shop/br", headers={"x-api-key": ''}, params={"language": 'ja'})
     data = json.loads(res.text)
     Result = {"featured": [], "daily": [], "special": []}
     if len(data['data']['featured']) > 1:
